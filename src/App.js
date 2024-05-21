@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import UploadComponent from './components/UploadComponent';
+import './index.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
+      <header className="w-full p-4 bg-blue-600 text-white text-center">
+        Image Converter Application
       </header>
+      <main className="flex flex-col items-center p-4">
+        <UploadComponent />
+      </main>
     </div>
   );
-}
+};
 
 export default App;
